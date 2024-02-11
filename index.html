@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.googleapis.com/css?family=Armata|Neuton" rel="stylesheet" type="text/css" />
+    <title>Three Portfolio Website 2024</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        --gap: 20em;
+        margin: 0;
+        background-color: #000;
+        font-family: "Armata", sans-serif;
+        color: #e0e0e0;
+      }
+      #container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 5em;
+      }
+      #three-canvas {
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .content-panel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 80vh;
+        width: 80%;
+        /* border: 3px solid #4f8e96; */
+        border-radius: 50px;
+        margin-bottom: var(--gap);
+        padding: 0 2em;
+      }
+      h1 {
+        font-size: 7em;
+        margin-bottom: 0;
+      }
+      h2 {
+        font-size: 2em;
+        margin-bottom: 0;
+      }
+      h3 {
+        font-size: 5em;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 1em;
+        color: #e0e0e0;
+        padding: 1em;
+      }
+      a:visited {
+        color: #e0e0e0;
+      }
+      a:hover {
+        color: #2244ff;
+        /* text-decoration: none; */
+      }
+      
+      #feature {
+        height: 60vh;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      .hero-panel {
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+        width: 80%;
+        /* border: 3px solid #e0e0e0; */
+        border-radius: 50px;
+        margin-bottom: var(--gap);
+        padding-top: 20em;
+      }
+      /* .hero-panel#footer {
+        margin-bottom: 5em;
+      } */
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "../libs/three.module.js",
+          "jsm/": "../libs/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <canvas id="three-canvas"></canvas>
+      <!-- content goes here -->
+      <div class="hero-panel">
+        <h1>Code Artist</h1>
+      </div>
+      <div class="content-panel">
+        <h2>Mission Statement</h2>
+        <h3>Clear, Comprehensible, Code Art Tutorials</h3>
+        
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin tortor purus platea sit eu id nisi litora libero. Neque vulputate consequat ac amet augue blandit maximus aliquet congue. Pharetra vestibulum posuere ornare faucibus fusce dictumst orci aenean eu facilisis ut volutpat commodo senectus purus himenaeos fames primis convallis nisi.
+          Phasellus fermentum malesuada phasellus netus dictum aenean placerat egestas amet. Ornare taciti semper dolor tristique morbi. Sem leo tincidunt aliquet semper eu lectus scelerisque quis. Sagittis vivamus mollis nisi mollis enim fermentum laoreet.
+        </p>
+      </div>
+      <div class="content-panel">
+        <h2><a href="https://www.youtube.com/channel/UC6tSVj7pAlao-jfpka298Iw" target="_blank">YouTube Tutorials</a></h2>
+      </div>
+      <div class="content-panel">
+        <h2><a href="https://github.com/bobbyroe" target="_blank">GitHub Projects</a></h2>
+      </div>
+      <div class="content-panel">
+        <h2><a href="https://www.linkedin.com/in/bobbyroe/" target="_blank">LinkedIn Profile</a></h2>
+      </div>
+      <div class="hero-panel" id="footer">
+        <h2>Get in Touch</h2>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
