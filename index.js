@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import getLayer from "../libs/bobbyroe/getLayer.js";
+import getLayer from "./libs/getLayer.js";
 import { getText } from "./src/text/getText.js";
 import { getCharacter } from "./src/character/getCharacter.js";
 import { getSphereWithLights } from "./src/pointLights/getSphereWithLights.js";
