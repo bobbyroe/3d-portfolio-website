@@ -5,7 +5,7 @@ const loader = new THREE.TextureLoader();
 function getSprite({ color, opacity, pos, size }) {
   const spriteMat = new THREE.SpriteMaterial({
     color,
-    map: loader.load("../assets/textures/sprites/rad-grad.png"),
+    map: loader.load("./libs/rad-grad.png"),
     transparent: true,
     opacity,
   });
