@@ -39,7 +39,7 @@ async function getCharacter() {
   ];
   const aIndex = Math.floor(Math.random() * animations.length);
   const anim = animations[aIndex];
-  const apath = "../assets/models/character/animations/";
+  const apath = "../src/character/animations/";
   const animScene = await loader.loadAsync(`${apath}${anim}.fbx`);
   const firstAnim = animScene.animations[0];
   const mixer = new THREE.AnimationMixer(char);
