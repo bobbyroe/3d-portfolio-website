@@ -3,11 +3,11 @@ import { FBXLoader } from "jsm/loaders/FBXLoader.js";
 
 const loader = new FBXLoader();
 const textureLoader = new THREE.TextureLoader();
-const path = "../assets/models/character/Y Bot.fbx";
+const path = "./src/character/Y Bot.fbx";
 
 function getMaterial() {
   const material = new THREE.MeshMatcapMaterial({
-    matcap: textureLoader.load("../assets/textures/matcaps/fire-edge-blue.jpg"),
+    matcap: textureLoader.load("./src/character/fire-edge-blue.jpg"),
   });
   return material;
 }
