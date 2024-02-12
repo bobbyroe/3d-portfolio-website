@@ -34,7 +34,6 @@ text.position.y = 1.5;
 stuffGroup.add(text);
 
 const rectangles = getRectangles();
-console.log(rectangles);
 rectangles.obj.position.y = -4;
 stuffGroup.add(rectangles.obj);
 
